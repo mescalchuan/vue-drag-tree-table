@@ -44,7 +44,7 @@
 
 ### on-current-change 事件
 
-当鼠标悬浮在当前行时触发，返回当前行信息
+当鼠标悬浮在某一行时触发，返回当前行信息
 
 ```html
 <drag-tree-table :data="data" @on-current-change="row => handleRowChange(row)" />
