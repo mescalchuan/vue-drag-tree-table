@@ -272,7 +272,6 @@ export default {
           }
           targetId = row.getAttribute('tree-id');
           hoverBlock = row.children[row.children.length - 1]
-          console.log(hoverBlock)
           var rowHeight = row.offsetHeight
           if (diffY/rowHeight > 3/4) {
             whereInsert = 'bottom'
@@ -501,7 +500,6 @@ export default {
         for (var i = 0; i< list.length; i++) {
             if (list[i][_this.custom_field['id']] == id) {
               var newRow = Object.assign({}, list[i], data);
-              console.log(2222, newRow)
               list[i] = newRow;
             }
             if (list[i][listKey] && list[i][listKey].length) {
@@ -510,7 +508,6 @@ export default {
         }
       }
       deep(deepList);
-      console.log(deepList)
       this.data.lists = deepList
     },
     GetChildIds(id, deep=true) {
